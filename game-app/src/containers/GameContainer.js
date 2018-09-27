@@ -1,14 +1,16 @@
 import React, { Component } from 'react';
+import Stars from '../components/Stars';
 
-class Game extends Component {
+class GameContainer extends Component {
   render()
  {
    return (
      <div>
        <h3>Play Nine</h3>
+       <Stars />
      </div>
    );
  };
 };
 
-export default Game;
+export default GameContainer;
