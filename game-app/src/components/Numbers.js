@@ -1,11 +1,12 @@
 import React from 'react';
 
+var _ = require('lodash');
+
 const Numbers = (props) => {
-  const arrayOfNumbers = _.range(1,10);
   return (
     <div>
       <div>
-        {arrayOfNumbers.map((number, i) =>
+        {Numbers.list.map((number, i) =>
           <span key={i}>{number}</span>
         )
         }
@@ -13,5 +14,7 @@ const Numbers = (props) => {
     </div>
   );
 };
+
+Numbers.list = _.range(1,10);
 
 export default Numbers;
